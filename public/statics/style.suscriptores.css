@@ -1,0 +1,48 @@
+
+/** estilos de suscriptores*/
+
+.img-persona{
+    width: 100px;
+    height: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divderecho{
+    text-align: right;
+    font-size: 1.2em;
+    background-color: #757575;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .divspam{
+        display: block;
+        font-size: 1.2em;
+    }
+
+
+    .img-persona{
+        width: 100px;
+        height: 100px;
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color: #E91E63;
+    text-align: center;
+
+    padding: 10px;
+    margin: 10px;
+}

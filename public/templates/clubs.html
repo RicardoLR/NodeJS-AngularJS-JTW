@@ -1,0 +1,63 @@
+
+
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand">Administración</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li ><a href="/#/home"> Mi panel </a></li>
+			</ul>
+	
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+		
+		<h2> Los Clubes disponibles...</h2>
+
+		<div class="row">
+
+			<div class="col-sm-6 col-md-4 col-lg-3" ng-repeat="club in getClubs" 
+				style="padding-bottom: 100px; margin:0px; border: 0px;">
+				
+				<div class="card">
+					
+					<img class="card-img-top" 
+						src="http://cdn.colombia.com/sdi/2017/05/11/horarios-de-partidos-de-futbol-del-viernes-12-de-mayo-en-vivo-por-tv-550927.jpg">
+					
+					<div class="card-block">
+						<h4 class="card-title">Club con numero: {{club.item.id}}</h4>
+						<div class="meta">
+							<a href="#"> creado por {{club.item.userId}}</a>
+						</div>
+					
+					</div>
+					<div class="card-footer">
+						<span class="float-right">
+							{{club.item.body | limitTo: club.limite }}
+
+							<div ng-if="club.limite==20">
+								<span class="glyphicon glyphicon-plus" ng-click="mostrarMas(club.item.id)"></span>						
+							</div>
+						</span>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+</div>
+

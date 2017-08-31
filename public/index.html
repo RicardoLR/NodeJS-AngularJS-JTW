@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--le decimos a nuestra página que vamos a utilizar el módulo app que hemos creado-->
+<html ng-app="app">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>AngularJS</title>
+  <link rel="stylesheet" type="text/css" href="statics/js/bootstrap/css/bootstrap.css">
+
+
+
+  <link rel="stylesheet" type="text/css" href="./statics/styles.css">
+  <link rel="stylesheet" type="text/css" href="./statics/style.clubs.css">
+  <link rel="stylesheet" type="text/css" href="./statics/style.suscriptores.css">
+
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+
+  <!--cdn con la version 1.2.4 de angular.js-->
+  <script src="statics/js/angular.min.js"></script>
+  <script src="statics/js/angular-route.js"></script>
+  <script type="text/javascript" src="statics/js/angular-jwt.min.js"></script>
+  <script type="text/javascript" src="statics/js/angular-storage.js"></script>
+
+
+
+</head>
+  
+  <body>
+      <div class="container">
+          
+          <!--directiva ng-view, aquí cargara todo el contenido-->
+          <div ng-view>
+            
+          </div>
+      </div>
+  </body>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <!--archivo app.js, donde hemos definido nuestro modulo app-->
+  <script type='text/javascript' src="scripts/config/app.js"></script>
+  <script type='text/javascript' src="scripts/config/config.js"></script>
+  
+  <script type='text/javascript' src="scripts/controller/controller.js"></script>
+  <script type='text/javascript' src="scripts/controller/controller.home.js"></script>
+  <script type='text/javascript' src="scripts/controller/controller.login.js"></script>
+  <script type='text/javascript' src="scripts/controller/controller.registro.js"></script>
+
+  <script type='text/javascript' src="scripts/controller/controller.clubs.js"></script>
+  <script type='text/javascript' src="scripts/controller/controller.subscribers.js"></script>
+
+
+  <script type='text/javascript' src="scripts/services/service.login.js"></script>
+  <script type='text/javascript' src="scripts/services/service.clubs.js"></script>
+  <script type='text/javascript' src="scripts/services/service.suscribers.js"></script>
+  <script type='text/javascript' src="scripts/services/service.registro.js"></script>
+
+
+</html>

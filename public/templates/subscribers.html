@@ -1,0 +1,63 @@
+
+
+<nav class="navbar navbar-inverse sidebar" role="navigation">
+	<div class="container-fluid">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand">Administración</a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li ><a href="/#/home"> Mi panel </a></li>
+			</ul>
+
+		</div>
+	</div>
+</nav>
+
+<div class="main">
+
+	<h2 class="centra"> Las Subscripciones disponibles </h2>
+
+
+	<div class="row" ng-repeat="persona in subscribers">
+	
+		<div class="col-xs-12 col-md-4" >
+			<img class="img-persona" 
+				src="../statics/img/persona.jpg">
+
+			<p class="divspam label label-primary" > {{persona.name}}</p>
+			<p class="divspam label label-info" > {{persona.email}}</p>
+		</div>
+		
+		<div class="col-xs-12 col-md-4" >
+			
+			<h5> <strong>Telefono: </strong>  {{persona.phone}} </h5>
+			<p> <strong>Pagina personal</strong> {{persona.website}} </p>
+
+				<p> 
+					<strong> Dirección:</strong> 
+					{{persona.address.street}},  {{persona.address.suite}}, {{persona.address.city}} 
+				</p>	
+		</div>
+		
+		<div class="divderecho col-xs-12 col-md-4" >
+			<p>
+				Trabaja en: {{persona.company.name}}, {{persona.company.catchPhrase}}			
+			</p>
+		</div>
+
+	</div>
+
+
+		
+</div>
+
+
