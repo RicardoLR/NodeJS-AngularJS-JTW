@@ -14,8 +14,6 @@ angular.module('app')
                     data: {"email" : user.email, "password" : user.password},
                     headers: {'Content-Type': 'application/json'}
                 })
-                // application/json
-                // headers: {'Content-Type': 'application/x-www-form-urlencoded'}
 
                 .then(function(res){
                     console.log("res", res);

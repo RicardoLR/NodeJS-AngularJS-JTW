@@ -1,4 +1,5 @@
 angular.module('app')
+	
 	.constant('CONFIG', {
 		APIURL: "http://localhost:8080/api",
 	})

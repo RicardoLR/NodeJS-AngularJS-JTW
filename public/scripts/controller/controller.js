@@ -5,5 +5,5 @@ angular.module('app')
         function($scope, CONFIG, authFactory, jwtHelper, store, $location){
 
             console.log("indexCtrl...");
-    }])
+    }]);
 

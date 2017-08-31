@@ -1,4 +1,4 @@
-var app = angular.module("app", ['ngRoute', 'angular-jwt', 'angular-storage']);
+var app = angular.module('app', ['ngRoute', 'angular-jwt', 'angular-storage']);
 
 app.run( ["$rootScope", 'jwtHelper', 'store', '$location', 
 	function($rootScope, jwtHelper, store, $location){

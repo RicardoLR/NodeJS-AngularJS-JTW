@@ -1,6 +1,5 @@
 angular.module('app')
 
-
     .controller('homeCtrl', 
         ['$scope','CONFIG', 'jwtHelper', 'store', 
         function($scope, CONFIG, jwtHelper, store) {
@@ -16,4 +15,4 @@ angular.module('app')
             //los mandamos a la vista como user
             $scope.user = tokenPayload;
 
-    }])
+    }]);

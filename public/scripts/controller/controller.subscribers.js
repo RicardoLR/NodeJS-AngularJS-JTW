@@ -21,4 +21,4 @@ angular.module('app')
 				if(res.data)  $scope.subscribers = res.data.data;				
 			});
 
-	}])
+	}]);
